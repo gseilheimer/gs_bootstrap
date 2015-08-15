@@ -1,0 +1,15 @@
+﻿# addon:gs_bootstrap de_de
+
+gs_bootstrap_name = Bootstrap
+
+gs_bootstrap_subpage_index = Startseite
+gs_bootstrap_subpage_index_txt_01 = Bootstrap - minimaler Aufwand...
+
+gs_bootstrap_subpage_settings = Einstellungen
+gs_bootstrap_subpage_settings_txt_01 = Bootstrap - minimaler Aufwand...
+
+gs_bootstrap_subpage_readme = Lies mich
+gs_bootstrap_subpage_readme_txt_01 = Bootstrap - minimaler Aufwand...
+
+gs_bootstrap_install_checkphpversion = Die PHP Version reicht nicht aus. Es wird mindestens Version 5.3 gebraucht. Im Moment ist Version {0} installiert.
+gs_bootstrap_install_redaxo_version_problem = Die REDAXO Version reicht nicht aus. Es wird mindestens Version {0} gebraucht.

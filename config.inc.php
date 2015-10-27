@@ -36,6 +36,30 @@
 
 
     if ($REX['REDAXO'] && $REX['USER']) {
+
+        //////////////////////////////////////////////////////////////////////////////////
+        // INCLUDES
+        //////////////////////////////////////////////////////////////////////////////////
+        #require_once $addon_root.'.......inc.php';
+        require_once($mypage_root .'/classes/class.rex_gs_bootstrap_utils.inc.php');
+
+
+        //////////////////////////////////////////////////////////////////////////////////
+        // FUNCTIONS
+        //////////////////////////////////////////////////////////////////////////////////
+
+        /*
+        // default settings (user settings are saved in data dir!)
+        $REX['ADDON'][$mypage]['settings'] = array(
+            'foo' => 'bar',
+            'foo2' => true,
+        );
+
+        // overwrite default settings with user settings
+        rex_mypage_utils::includeSettingsFile();
+        */
+
+
         //////////////////////////////////////////////////////////////////////////////////
         // SUBPAGES
         //////////////////////////////////////////////////////////////////////////////////
@@ -53,26 +77,12 @@
                 array('readme', $I18N->msg($mypage . '_subpage_readme'), '', '', '')
             );
 
+    } else {
 
         //////////////////////////////////////////////////////////////////////////////////
-        // INCLUDES
-        //////////////////////////////////////////////////////////////////////////////////
-        #require_once $addon_root.'.......inc.php';
-        require_once($mypage_root .'/classes/class.rex_mypage_utils.inc.php');
-
-
-        //////////////////////////////////////////////////////////////////////////////////
-        // FUNCTIONS
+        // INCLUDES HEADER
         //////////////////////////////////////////////////////////////////////////////////
 
-        /*
-        // default settings (user settings are saved in data dir!)
-        $REX['ADDON'][$mypage]['settings'] = array(
-            'foo' => 'bar',
-            'foo2' => true,
-        );
+        #rex_register_extension('OUTPUT_FILTER', 'rex_gs_bootstrap_utils::includeMyPageHeader');
 
-        // overwrite default settings with user settings
-        rex_mypage_utils::includeSettingsFile();
-        */
     }

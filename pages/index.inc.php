@@ -78,5 +78,3 @@
    echo '</div>';
 
    require $REX['INCLUDE_PATH'] . "/layout/bottom.php";
-
-?>

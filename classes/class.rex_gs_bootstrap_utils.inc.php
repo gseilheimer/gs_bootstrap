@@ -1,6 +1,6 @@
 <?php
 
-class rex_mypage_utils
+class rex_gs_bootstrap_utils
 {
     public static function getSettingsFile($mypage)
     {
